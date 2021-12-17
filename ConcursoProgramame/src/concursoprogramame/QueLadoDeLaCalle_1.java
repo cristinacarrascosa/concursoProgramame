@@ -8,7 +8,7 @@ package concursoprogramame;
 import java.util.Scanner;
 
 
-public class QueLadoDeLaCalle {
+public class QueLadoDeLaCalle_1{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
