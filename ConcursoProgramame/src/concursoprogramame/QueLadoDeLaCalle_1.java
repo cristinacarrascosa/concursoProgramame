@@ -7,31 +7,24 @@ package concursoprogramame;
 
 import java.util.Scanner;
 
-/**
- *
- * @author carra
- */
+
 public class QueLadoDeLaCalle {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        int[] num;
+        int n;
 
-        for (int i = 0; i < num.length; i++) {
-            System.out.println("Dime número");
-            num[i]= sc.nextInt();
-        }
-        
-        for (int i : num) {
-            if ( i % 2 == 0){
+        do {
+            n = sc.nextInt();
+            
+            if (n % 2 == 0 && n !=0) {
                 System.out.println("DERECHA");
-            }else {
+            } else if(n % 2 !=0){
                 System.out.println("IZQUIERDA");
             }
-        }
 
-        
+        } while (n != 0);
+
     }
 
 }
