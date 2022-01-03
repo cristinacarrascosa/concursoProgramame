@@ -18,7 +18,7 @@ public class Ejercicio_BucleWhile {
 
         Scanner sc = new Scanner(System.in);
 
-        int aleatorio = (int) (Math.random() * 100 + 1);
+        int aleatorio = (int) (Math.random() * 100);
 
         int contador = 0;
         
@@ -29,6 +29,7 @@ public class Ejercicio_BucleWhile {
         while (numero != aleatorio) {
             
             System.out.println("Adivina el número entre 1 y 100");
+            contador ++;
 
             numero = sc.nextInt();
 
@@ -36,13 +37,13 @@ public class Ejercicio_BucleWhile {
 
                 System.out.println("El nº es menor");
                 
-                 contador++;
+                 
 
             } else {
 
                 System.out.println("El nº es mayor");
                 
-                 contador++;
+                
             }
 
         }
